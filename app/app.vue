@@ -7,17 +7,17 @@ useHead({
   }
 })
 
-const title = 'Nuxt Starter Template'
+const title = 'Yopaat - Technology & Management Services'
 const description
-  = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+  = 'Yopaat is a cross-industry, cross-disciplinary B2B services company with a focus on technology and management services in Information & Communication Technologies.'
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
+  ogImage: '/yopaat-logo.png',
+  twitterImage: '/yopaat-logo.png',
   twitterCard: 'summary_large_image'
 })
 </script>
