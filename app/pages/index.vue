@@ -1,5 +1,9 @@
 <template>
   <div class="relative min-h-[calc(100vh-140px)] flex items-center justify-center overflow-hidden">
+    <div class="absolute top-4 right-4 z-50">
+      <UColorModeSwitch />
+    </div>
+
     <!-- Dynamic Background Elements -->
     <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
       <div
@@ -18,11 +22,12 @@
       <!-- Logo Animation -->
       <div class="relative group cursor-default mb-8">
         <div class="absolute inset-0 bg-linear-to-r from-blue-500/30 to-purple-600/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
-        <img
-          src="/yopaat-logo.png"
+        <UColorModeImage
+          light="/yopaat-logo-light.png"
+          dark="/yopaat-logo.png"
           alt="Yopaat Logo"
           class="relative w-40 h-40 md:w-56 md:h-56 object-contain drop-shadow-2xl transform transition-transform duration-700 group-hover:scale-105"
-        >
+        />
       </div>
 
       <!-- Main Content -->

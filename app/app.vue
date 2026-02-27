@@ -24,7 +24,7 @@ useSeoMeta({
 
 <template>
   <UApp>
-    <!-- <UHeader>
+    <UHeader>
       <template #left>
         <NuxtLink to="/">
           <AppLogo class="w-auto h-6 shrink-0" />
@@ -45,18 +45,18 @@ useSeoMeta({
           variant="ghost"
         />
       </template>
-    </UHeader> -->
+    </UHeader>
 
     <UMain>
       <NuxtPage />
     </UMain>
 
-    <!-- <USeparator icon="i-simple-icons-nuxtdotjs" /> -->
+    <USeparator icon="i-simple-icons-nuxtdotjs" />
 
-    <!-- <UFooter>
+    <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
+          Technology & Management Services • © Yopaat {{ new Date().getFullYear() }}
         </p>
       </template>
 
@@ -70,6 +70,6 @@ useSeoMeta({
           variant="ghost"
         />
       </template>
-    </UFooter> -->
+    </UFooter>
   </UApp>
 </template>
