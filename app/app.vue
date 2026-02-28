@@ -2,7 +2,11 @@
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 useHead({
-  meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+  meta: [
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'theme-color', content: '#1e40af' }
+  ],
   link: [
     { rel: 'icon', href: '/favicon.png' },
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -20,9 +24,14 @@ useSeoMeta({
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: '/yopaat-logo.png',
-  twitterImage: '/yopaat-logo.png',
-  twitterCard: 'summary_large_image'
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogSiteName: 'Yopaat',
+  twitterCard: 'summary_large_image',
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const mobileNavItems: NavigationMenuItem[] = [

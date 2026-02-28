@@ -1,7 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Industries — Yopaat',
-  description: 'A deep understanding in an industry enables not only getting client needs right but also taking a client by hand to expand their horizons.'
+  description: 'Yopaat brings deep industry expertise across Public Sector, Finance, Telecommunications, Healthcare, Retail, Education, Oil & Gas, and more.',
+  keywords: 'industries, public sector, finance, telecommunications, healthcare, retail, education, Yopaat industry expertise',
+  ogTitle: 'Industries — Yopaat',
+  ogDescription: 'Deep industry understanding across finance, healthcare, telecom, retail, public sector, and more.',
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/industries',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Industries — Yopaat',
+  twitterDescription: 'Deep industry understanding across finance, healthcare, telecom, retail, public sector, and more.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const industries = [

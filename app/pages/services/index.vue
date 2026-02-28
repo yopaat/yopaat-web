@@ -1,7 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Services — Yopaat',
-  description: 'Explore Yopaat\'s full suite of technology and management services: Consultancy, Project, and Outplacement Services.'
+  description: 'Explore Yopaat\'s full suite of technology and management services: Consultancy, Project, and Outplacement Services tailored to your industry needs.',
+  keywords: 'Yopaat services, consultancy services, project services, outplacement services, technology services, B2B',
+  ogTitle: 'Services — Yopaat',
+  ogDescription: 'End-to-end technology and management services tailored to you.',
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/services',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Services — Yopaat',
+  twitterDescription: 'End-to-end technology and management services tailored to your industry needs.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const services = [

@@ -1,7 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Consultancy Services — Yopaat',
-  description: 'Today\'s consultancy and technology provision services require in-depth knowledge of an organisation and its business, together with a perfect vision on its industry.'
+  description: 'Yopaat\'s consultancy services offer strategy development, pre-sales support, and technology architecture best practices grounded in deep industry knowledge.',
+  keywords: 'consultancy services, strategy development, pre-sales, technology architecture, Yopaat, ICT consultancy',
+  ogTitle: 'Consultancy Services — Yopaat',
+  ogDescription: 'Strategy development, pre-sales, and technology architecture services with deep industry expertise.',
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/services/consultancy-services',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Consultancy Services — Yopaat',
+  twitterDescription: 'Strategy development, pre-sales, and technology architecture services with deep industry expertise.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const services = [

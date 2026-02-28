@@ -1,7 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Project Services — Yopaat',
-  description: 'Today\'s consultancy and technology provision services require in-depth knowledge of an organisation and its business, together with a perfect vision on its industry.'
+  description: 'Yopaat\'s project services cover end-to-end planning, implementation, and maintenance — from agile roadmaps to blockchain platforms and distributed systems.',
+  keywords: 'project services, planning, implementation, maintenance, support, training, Yopaat, technology delivery',
+  ogTitle: 'Project Services — Yopaat',
+  ogDescription: 'End-to-end planning, implementation, and maintenance services delivered with precision.',
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/services/project-services',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Project Services — Yopaat',
+  twitterDescription: 'End-to-end planning, implementation, and maintenance services delivered with precision.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const services = [

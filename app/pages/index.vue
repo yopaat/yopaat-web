@@ -2,12 +2,17 @@
 useSeoMeta({
   title: 'Yopaat — Technology & Management Services',
   description: 'Yopaat is a cross-industry, cross-disciplinary B2B services company with a focus on technology and management services in Information & Communication Technologies.',
-  keywords: 'Yopaat, B2B services, technology, management, ICT, consultancy, specializations',
+  keywords: 'Yopaat, B2B services, technology, management, ICT, consultancy, specializations, project services, outplacement',
   ogTitle: 'Yopaat — Technology & Management Services',
   ogDescription: 'Bringing together industrial specialization and technology expertise.',
-  ogImage: '/yopaat-logo.png',
-  twitterImage: '/yopaat-logo.png',
-  twitterCard: 'summary_large_image'
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Yopaat — Technology & Management Services',
+  twitterDescription: 'Bringing together industrial specialization and technology expertise.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 // Scroll reveal intersection observer

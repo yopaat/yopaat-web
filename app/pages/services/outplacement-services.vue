@@ -1,7 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Outplacement Services — Yopaat',
-  description: 'Yopaat provides experienced, certified professionals on short-, mid- and long-term assignments as required by clients.'
+  description: 'Yopaat provides experienced, certified professionals on flexible short-, mid-, and long-term assignments — covering enterprise architecture, DevOps, cybersecurity, and more.',
+  keywords: 'outplacement services, certified professionals, enterprise architecture, DevOps, cybersecurity, staffing, Yopaat',
+  ogTitle: 'Outplacement Services — Yopaat',
+  ogDescription: 'Certified professionals on demand for short-, mid-, and long-term technology assignments.',
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/services/outplacement-services',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Outplacement Services — Yopaat',
+  twitterDescription: 'Certified professionals on demand for short-, mid-, and long-term technology assignments.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const specializations = [

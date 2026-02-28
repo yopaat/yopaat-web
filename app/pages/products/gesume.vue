@@ -1,7 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Gésumé — Yopaat',
-  description: 'Gésumé is a very innovative job-board and recruitment platform that helps professionals and recruiters ensure effective matches between individuals and vacancies.'
+  description: 'Gésumé is an innovative job-board and recruitment platform by Yopaat that ensures effective matches between professionals and vacancies through smart technology.',
+  keywords: 'Gésumé, job board, recruitment platform, talent matching, professionals, recruiters, Yopaat',
+  ogTitle: 'Gésumé — Smart Recruitment Platform by Yopaat',
+  ogDescription: 'Innovative job-board and recruitment platform ensuring effective matches between professionals and vacancies.',
+  ogImage: 'https://gesume.com/gesume-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/products/gesume',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Gésumé — Smart Recruitment Platform by Yopaat',
+  twitterDescription: 'Innovative job-board and recruitment platform ensuring effective matches between professionals and vacancies.',
+  twitterImage: 'https://gesume.com/gesume-logo.png',
+  twitterSite: '@yopaat'
 })
 </script>
 

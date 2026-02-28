@@ -1,7 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Products — Yopaat',
-  description: 'Discover Yopaat\'s product portfolio. Gésumé is our innovative job-board and recruitment platform ensuring effective matches between professionals and vacancies.'
+  description: 'Discover Yopaat\'s product portfolio including Gésumé, an innovative job-board and recruitment platform ensuring effective matches between professionals and vacancies.',
+  keywords: 'Yopaat products, Gésumé, job board, recruitment platform, talent matching, HR technology',
+  ogTitle: 'Products — Yopaat',
+  ogDescription: 'Purpose-built technology products from Yopaat — built for the real world.',
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/products',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Products — Yopaat',
+  twitterDescription: 'Innovative technology products from Yopaat, including Gésumé — the smart job-board and recruitment platform.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const products = [

@@ -1,7 +1,18 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Specializations — Yopaat',
-  description: 'Yopaat excels in putting skills and specializations of various fields into a coherent, coordinated action plan in order to meet and exceed client expectations.'
+  description: 'Yopaat specializes in Digital Transformation, Cyber Security, AI, IoT, Cloud, Blockchain, E-Commerce, and more — putting multi-disciplinary skills into a coherent action plan.',
+  keywords: 'specializations, digital transformation, cyber security, artificial intelligence, IoT, cloud, blockchain, Yopaat',
+  ogTitle: 'Specializations — Yopaat',
+  ogDescription: 'Multi-disciplinary technology specializations from AI and IoT to cloud, blockchain, and enterprise agility.',
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/specializations',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Specializations — Yopaat',
+  twitterDescription: 'Multi-disciplinary technology specializations from AI and IoT to cloud, blockchain, and enterprise agility.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const specializations = [

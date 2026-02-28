@@ -3,7 +3,18 @@ import type { FormError, FormSubmitEvent } from '#ui/types'
 
 useSeoMeta({
   title: 'Contact — Yopaat',
-  description: 'Get in touch with Yopaat. Whether you need consultancy, project services, or simply want to explore how we can help — we would love to hear from you.'
+  description: 'Get in touch with Yopaat. Whether you need consultancy, project services, or outplacement professionals — we\'d love to hear from you.',
+  keywords: 'contact Yopaat, get in touch, Yopaat contact, B2B technology services contact',
+  ogTitle: 'Contact Yopaat — Let\'s Navigate the Storm Together',
+  ogDescription: 'Whether you need consultancy, project services, or simply want to explore how we can help — we\'d love to hear from you.',
+  ogImage: 'https://yopaat.com/yopaat-logo.png',
+  ogType: 'website',
+  ogUrl: 'https://yopaat.com/contact',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Contact Yopaat',
+  twitterDescription: 'Let\'s navigate the storm of technological change together. Get in touch with Yopaat.',
+  twitterImage: 'https://yopaat.com/yopaat-logo.png',
+  twitterSite: '@yopaat'
 })
 
 const state = reactive({
