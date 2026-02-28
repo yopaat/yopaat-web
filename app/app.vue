@@ -41,7 +41,7 @@ const mobileNavItems: NavigationMenuItem[] = [
     to: '/products',
     defaultOpen: false,
     children: [
-      { label: 'Gesume', to: '/products/gesume', icon: 'i-lucide-file-text' }
+      { label: 'Gésumé', to: '/products/gesume', icon: 'i-lucide-file-text' }
     ]
   },
   { label: 'Specializations', to: '/specializations', icon: 'i-lucide-star' },

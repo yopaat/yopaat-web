@@ -31,7 +31,7 @@ const navItems: NavigationMenuItem[] = [
     to: '/products',
     children: [
       {
-        label: 'Gesume',
+        label: 'Gésumé',
         description: 'Smart resume and professional profile management platform.',
         icon: 'i-lucide-file-text',
         to: '/products/gesume'
