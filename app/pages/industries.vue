@@ -21,7 +21,10 @@ const industries = [
 onMounted(() => {
   const observer = new IntersectionObserver(
     entries => entries.forEach((el) => {
-      if (el.isIntersecting) { el.target.classList.add('revealed'); observer.unobserve(el.target) }
+      if (el.isIntersecting) {
+        el.target.classList.add('revealed')
+        observer.unobserve(el.target)
+      }
     }),
     { threshold: 0.1 }
   )
@@ -44,13 +47,6 @@ onMounted(() => {
 
       <UContainer class="relative text-center">
         <div class="animate-fade-in-up">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold tracking-wide mb-8">
-            <UIcon
-              name="i-lucide-building-2"
-              class="w-3.5 h-3.5"
-            />
-            Industry Expertise
-          </div>
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.15] mb-6 max-w-3xl mx-auto">
             <span class="font-light">Yopaat takes pride in having</span> built various industry
             views and frameworks

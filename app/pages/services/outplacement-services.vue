@@ -18,7 +18,10 @@ const specializations = [
 onMounted(() => {
   const observer = new IntersectionObserver(
     entries => entries.forEach((el) => {
-      if (el.isIntersecting) { el.target.classList.add('revealed'); observer.unobserve(el.target) }
+      if (el.isIntersecting) {
+        el.target.classList.add('revealed')
+        observer.unobserve(el.target)
+      }
     }),
     { threshold: 0.1 }
   )

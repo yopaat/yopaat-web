@@ -14,7 +14,7 @@ useSeoMeta({
 onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach(el => {
+      entries.forEach((el) => {
         if (el.isIntersecting) {
           el.target.classList.add('revealed')
           observer.unobserve(el.target)
@@ -67,12 +67,6 @@ const services = [
       </div>
 
       <UContainer class="relative z-10 text-center py-24 px-4">
-        <!-- Hero badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold tracking-wide mb-8 animate-fade-in">
-          <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse inline-block" />
-          Technology & Management Services
-        </div>
-
         <!-- Main headline -->
         <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up animation-delay-200">
           Bringing Together
@@ -115,7 +109,10 @@ const services = [
       <!-- Scroll indicator -->
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
         <span class="text-xs text-muted tracking-widest uppercase">Scroll</span>
-        <UIcon name="i-lucide-chevron-down" class="text-muted w-4 h-4" />
+        <UIcon
+          name="i-lucide-chevron-down"
+          class="text-muted w-4 h-4"
+        />
       </div>
     </section>
 
@@ -124,8 +121,12 @@ const services = [
       <UContainer>
         <!-- Section header -->
         <div class="text-center mb-16 scroll-reveal">
-          <p class="text-sm font-semibold text-primary tracking-widest uppercase mb-3">What We Do</p>
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <p class="text-sm font-semibold text-primary tracking-widest uppercase mb-3">
+            What We Do
+          </p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Our Services
+          </h2>
           <p class="text-muted max-w-xl mx-auto text-lg font-light">
             End-to-end technology and management services tailored to your industry needs.
           </p>
@@ -139,7 +140,10 @@ const services = [
             class="scroll-reveal card-hover"
             :style="`animation-delay: ${i * 0.15}s`"
           >
-            <NuxtLink :to="service.href" class="block h-full">
+            <NuxtLink
+              :to="service.href"
+              class="block h-full"
+            >
               <div
                 class="h-full rounded-2xl border p-8 flex flex-col gap-5 transition-all duration-300"
                 :class="service.featured
@@ -189,7 +193,10 @@ const services = [
                   :class="service.featured ? 'text-white' : 'text-primary'"
                 >
                   Learn more
-                  <UIcon name="i-lucide-arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <UIcon
+                    name="i-lucide-arrow-right"
+                    class="w-4 h-4 transition-transform group-hover:translate-x-1"
+                  />
                 </div>
               </div>
             </NuxtLink>
@@ -236,19 +243,28 @@ const services = [
             <!-- Floating card 1 (back) -->
             <div class="absolute -top-6 -left-6 w-48 h-32 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-blue-600/20 border border-primary/20 backdrop-blur-sm shadow-xl animate-float animation-delay-600" />
             <!-- Main card -->
-            <div class="relative rounded-3xl bg-gradient-to-br from-default to-elevated border border-default shadow-2xl overflow-hidden aspect-[4/3] flex items-center justify-center animate-float animation-delay-200">
-              <div class="text-center px-8">
-                <div class="w-20 h-20 mx-auto mb-4 rounded-2xl bg-primary/10 flex items-center justify-center">
-                  <UIcon name="i-lucide-zap" class="w-10 h-10 text-primary" />
-                </div>
-                <p class="text-2xl font-bold mb-1">Ready to Transform?</p>
-                <p class="text-muted text-sm">Image coming soon</p>
+            <div class="relative rounded-3xl bg-gradient-to-br from-default to-elevated border border-default shadow-2xl overflow-hidden aspect-[4/3] group animate-float animation-delay-200">
+              <NuxtImg
+                src="/feature-transformation.png"
+                alt="Technology Transformation"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                format="webp"
+                placeholder
+              />
+              <div class="absolute inset-x-0 bottom-0 bg-linear-to-t from-gray-900/90 via-gray-900/40 to-transparent p-8 pt-12 text-center sm:text-left">
+                <p class="text-2xl font-bold text-white mb-1">
+                  Ready to Transform?
+                </p>
               </div>
             </div>
             <!-- Stats badge -->
             <div class="absolute -bottom-4 -right-4 bg-primary text-white rounded-2xl px-5 py-3 shadow-xl shadow-primary/30 animate-float animation-delay-800">
-              <p class="text-xs font-medium opacity-80">Industry Expertise</p>
-              <p class="text-2xl font-bold">10+</p>
+              <p class="text-xs font-medium opacity-80">
+                Industry Expertise
+              </p>
+              <p class="text-2xl font-bold">
+                10+
+              </p>
             </div>
           </div>
         </div>
@@ -256,7 +272,10 @@ const services = [
     </section>
 
     <!-- ===================== SPECIALIZATIONS & INDUSTRIES ===================== -->
-    <section id="spec" class="py-24 bg-elevated">
+    <section
+      id="spec"
+      class="py-24 bg-elevated"
+    >
       <UContainer>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <!-- Left: Visual Parallax Stack -->
@@ -267,13 +286,18 @@ const services = [
               style="transform: translateY(0px); transition: transform 0.3s ease;"
             />
             <!-- Front card -->
-            <div class="relative w-[85%] aspect-[4/3] rounded-2xl bg-gradient-to-br from-default to-white dark:to-muted border border-default shadow-2xl overflow-hidden flex items-center justify-center">
-              <div class="text-center">
-                <div class="w-16 h-16 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <UIcon name="i-lucide-layers" class="w-8 h-8 text-primary" />
-                </div>
-                <p class="font-semibold text-lg">Multi-Domain Expertise</p>
-                <p class="text-muted text-sm">Image placeholder</p>
+            <div class="relative w-[85%] aspect-[4/3] rounded-2xl bg-gradient-to-br from-default to-white dark:to-muted border border-default shadow-2xl overflow-hidden group">
+              <NuxtImg
+                src="/feature-expertise.png"
+                alt="Multi-Domain Expertise"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                format="webp"
+                placeholder
+              />
+              <div class="absolute inset-x-0 bottom-0 bg-linear-to-t from-gray-900/90 via-gray-900/40 to-transparent p-6 pt-10 text-center">
+                <p class="font-semibold text-lg text-white">
+                  Multi-Domain Expertise
+                </p>
               </div>
             </div>
           </div>
@@ -282,7 +306,9 @@ const services = [
           <div class="flex flex-col gap-12">
             <!-- Specializations -->
             <div class="scroll-reveal">
-              <h3 class="text-2xl font-bold mb-3">Specializations</h3>
+              <h3 class="text-2xl font-bold mb-3">
+                Specializations
+              </h3>
               <p class="text-muted leading-relaxed mb-5">
                 Yopaat excels in putting skills and specializations of various fields into a coherent,
                 coordinated action plan in order to meet and exceed client expectations.
@@ -301,7 +327,9 @@ const services = [
 
             <!-- Industries -->
             <div class="scroll-reveal animation-delay-200">
-              <h3 class="text-2xl font-bold mb-3">Industries</h3>
+              <h3 class="text-2xl font-bold mb-3">
+                Industries
+              </h3>
               <p class="text-muted leading-relaxed mb-5">
                 A deep understanding in an industry enables not only getting client needs right but
                 also taking a client by hand to expand their horizons — providing an extended view
@@ -326,10 +354,13 @@ const services = [
       <UContainer>
         <div class="scroll-reveal rounded-3xl bg-gradient-to-r from-blue-600 to-indigo-700 p-12 text-center text-white shadow-2xl shadow-primary/20 relative overflow-hidden">
           <!-- BG noise texture -->
-          <div class="absolute inset-0 opacity-10 pointer-events-none"
+          <div
+            class="absolute inset-0 opacity-10 pointer-events-none"
             style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJuIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC45IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbHRlcj0idXJsKCNuKSIgb3BhY2l0eT0iMSIvPjwvc3ZnPg==');"
           />
-          <p class="text-sm font-semibold tracking-widest uppercase opacity-80 mb-4">Let's Work Together</p>
+          <p class="text-sm font-semibold tracking-widest uppercase opacity-80 mb-4">
+            Let's Work Together
+          </p>
           <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
             Ready to navigate the storm<br class="hidden sm:block"> of technological change?
           </h2>

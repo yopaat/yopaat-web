@@ -46,7 +46,14 @@ useSeoMeta({
                 alt="Gésumé"
                 width="228"
                 height="81"
-                class="h-16 w-auto object-contain"
+                class="h-16 w-auto object-contain dark:hidden"
+              >
+              <img
+                src="https://gesume.com/gesume-logo-light.png"
+                alt="Gésumé"
+                width="228"
+                height="81"
+                class="h-16 w-auto object-contain hidden dark:block"
               >
             </a>
           </div>
